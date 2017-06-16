@@ -3,7 +3,7 @@ package com.betterzhang.learnkotlin.kotlin
 // 导入包
 
 /**
- * 基础语法
+ * Kotlin基础语法
  * Created by betterzhang on 2017/6/16.
  */
 class KotlinLesson1 {
