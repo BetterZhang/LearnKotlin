@@ -1,4 +1,4 @@
-package com.betterzhang.learnkotlin
+package com.betterzhang.learnkotlin.domain
 
 /**
  * Created by betterzhang on 2017/6/15.

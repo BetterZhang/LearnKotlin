@@ -1,7 +1,6 @@
 // 定义包
-package com.betterzhang.learnkotlin
+package com.betterzhang.learnkotlin.kotlin
 // 导入包
-import java.util.*
 
 /**
  * 基础语法
