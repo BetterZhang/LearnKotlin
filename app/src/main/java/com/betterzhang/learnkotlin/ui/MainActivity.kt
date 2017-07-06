@@ -1,5 +1,6 @@
 package com.betterzhang.learnkotlin.ui
 
+import android.app.Activity
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.support.design.widget.FloatingActionButton
@@ -7,6 +8,7 @@ import android.support.design.widget.Snackbar
 import android.support.v7.widget.Toolbar
 import android.view.Menu
 import android.view.MenuItem
+import android.widget.Toast
 import com.betterzhang.learnkotlin.R
 import kotlinx.android.synthetic.main.content_main.*
 
@@ -19,6 +21,8 @@ class MainActivity : AppCompatActivity() {
         setSupportActionBar(toolbar)
 
         tv_content.text = "Hello Kotlin"
+
+        tv_content.setOnClickListener { toast("TextView OnClick") }
 
         val fab = findViewById(R.id.fab) as FloatingActionButton
         fab.setOnClickListener { view ->
@@ -38,6 +42,10 @@ class MainActivity : AppCompatActivity() {
             return true
         }
         return super.onOptionsItemSelected(item)
+    }
+
+    fun Activity.toast(message: CharSequence, duration: Int = Toast.LENGTH_SHORT) {
+        Toast.makeText(this, message, duration).show()
     }
 
 }
